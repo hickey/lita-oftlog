@@ -17,9 +17,9 @@ module Lita
       config :searches, types: [Array], default: QUERIES
       
 
-      route(/(?:Oh\s+for\s+the\+love\s+of\s+God|\boftlog\b)/i, :fetch, 
+      route(/(?:Oh\s+for\s+the\s+love\s+of\s+God|\boftlog\b)/i, :fetch, 
         command: false, help: {
-        "image QUERY" => "Image of the slap you should receive."
+        "oh for the love of god" => "Image of the slap you should receive."
       })
 
       def fetch(response)
