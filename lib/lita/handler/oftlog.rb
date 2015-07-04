@@ -40,7 +40,7 @@ module Lita
           if choice
             response.reply ensure_extension(choice["unescapedUrl"])
           else
-            response.reply %{No images found for "#{query}".}
+            response.reply %{No images found for some random idiotic idea.}
           end
         else
           reason = data["responseDetails"] || "unknown error"

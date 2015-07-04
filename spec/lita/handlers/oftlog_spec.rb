@@ -62,7 +62,7 @@ JSON
 JSON
       )
       send_command("oftlog")
-      expect(replies.last).to eq(%{No images found for "oftlog".})
+      expect(replies.last).to eq(%{No images found for some random idiotic idea.})
     end
 
     it "logs a warning on failure" do
