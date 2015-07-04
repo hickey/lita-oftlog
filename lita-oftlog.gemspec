@@ -1,13 +1,13 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-oftlog"
-  spec.version       = "0.1.0"
+  spec.version       = "1.0.0"
   spec.authors       = ["Gerard Hickey"]
   spec.email         = ["gerard.hickey@audiencescience.com"]
-  spec.description   = "TODO: Add a description"
-  spec.summary       = "TODO: Add a summary"
-  spec.homepage      = "TODO: Add a homepage"
-  spec.license       = "TODO: Add a license"
-  spec.metadata      = { "lita_plugin_type" => "extension" }
+  spec.description   = "Displays an image deserving of the slap you should receive"
+  spec.summary       = "Displays an image deserving of the slap you should receive"
+  spec.homepage      = "https://github.com/hickey/lita-oftlog"
+  spec.license       = "MIT"
+  spec.metadata      = { "lita_plugin_type" => "handler" }
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
