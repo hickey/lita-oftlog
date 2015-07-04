@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-oftlog"
-  spec.version       = "1.0.0"
+  spec.version       = "1.1.0"
   spec.authors       = ["Gerard Hickey"]
   spec.email         = ["gerard.hickey@audiencescience.com"]
   spec.description   = "Displays an image deserving of the slap you should receive"

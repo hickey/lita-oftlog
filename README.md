@@ -28,6 +28,21 @@ Lita.configure do |config|
 end
 ```
 
+* searches (Array) - An array of strings used to search Google for images. Defaults to 
+  * oh for the love of god
+  * stupid idea
+  * stupid butt
+  * post turtle
+
+Example
+
+```
+Lita.configure do |config|
+  config.handlers.oftlog.searches = ['square wheels', 'write only drive']
+end
+```
+
+
 ## Usage
 
 The plugin will respond to two basic phrases irrespective of capitalization or spacing. 

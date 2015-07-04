@@ -3,6 +3,8 @@ module Lita
     class Oftlog < Handler
       URL = "https://ajax.googleapis.com/ajax/services/search/images"
       VALID_SAFE_VALUES = %w(active moderate off)
+      QUERIES = [ 'oh for the love of god', 'stupid idea', 'stupid butt',
+                  'post turtle']
 
       config :safe_search, types: [String, Symbol], default: :active do
         validate do |value|
@@ -11,6 +13,9 @@ module Lita
           end
         end
       end
+      
+      config :searches, types: [Array], default: QUERIES
+      
 
       route(/(?:Oh\s+for\s+the\+love\s+of\s+God|\boftlog\b)/i, :fetch, 
         command: false, help: {
@@ -18,7 +23,7 @@ module Lita
       })
 
       def fetch(response)
-        query = 'oh for the love of god'
+        query = config.searches[rand(config.searches.count)]
 
         http_response = http.get(
           URL,
