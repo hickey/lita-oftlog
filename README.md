@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/hickey/lita-oftlog.png?branch=master)](https://travis-ci.org/hickey/lita-oftlog)
 [![Code Climate](https://codeclimate.com/github/hickey/lita-oftlog.png)](https://codeclimate.com/github/hickey/lita-oftlog)
-[![Coverage Status](https://coveralls.io/repos/hickey/lita-oftlog/badge.png)](https://coveralls.io/r/hickey/lita-oftlog)
+[![Coverage Status](https://coveralls.io/repos/hickey/lita-oftlog/badge.svg?branch=master)](https://coveralls.io/r/hickey/lita-oftlog?branch=master)
 
 This is a Lita handler that will search Google for images based on the phrase "oh for the love of god". I had a manager that would use this phrase all the time, so of course it had to be immortialized with a Lita plugin. 
 
